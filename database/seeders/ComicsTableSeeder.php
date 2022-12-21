@@ -15,8 +15,10 @@ class ComicsTableSeeder extends Seeder
      */
     public function run()
     {
+        //Prendiamo l'array presente in config/comics.php
         $comicsArray = config('comics');
 
+        //Per ogni singolo array creiamo un oggetto comic e riempiamo tutti i dati, infine salviamo
         foreach ($comicsArray as $comic) {
             $newComic = new Comic();
             $newComic->title = $comic['title'];

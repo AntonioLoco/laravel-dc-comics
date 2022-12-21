@@ -4,7 +4,7 @@
 
 @section('content')
     <section>
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center mt-5">
             <div class="card" style="width: 500px;">
                 <img src="{{ $comic->thumb }}" class="card-img-top" alt="..." style="max-width: 100%">
                 <div class="card-body">

@@ -6,8 +6,10 @@
     <section>
         <div class="container text-center mt-4">
             <h1>Tutti i comics</h1>
-            <a href="{{ route('comics.create') }}" class="btn btn-primary">Aggiungi Comic</a>
-            <div class="row row-cols-4 g-3">
+            <div class="text-end">
+                <a href="{{ route('comics.create') }}" class="btn btn-primary">Aggiungi Comic</a>
+            </div>
+            <div class="row row-cols-4 g-3 pt-3">
                 @foreach ($comics as $comic)
                     <div class="col">
                         <div class="card">
