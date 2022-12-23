@@ -59,7 +59,6 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        // $comic = Comic::findOrFail($id);
         return view('comics.show', compact('comic'));
     }
 
@@ -78,7 +77,6 @@ class ComicController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Comic $comic)
